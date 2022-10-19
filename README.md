@@ -7,3 +7,8 @@ delete keypair.pem
 
 user: user@user.com
 pass: user
+
+link 
+- /api/auth/login
+- /api/recruitment/positions
+- /api/recruitment/positions/{id}
