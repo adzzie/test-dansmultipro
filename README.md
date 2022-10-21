@@ -4,3 +4,14 @@ openssl rsa -in keypair.pem -pubout -out public.pem
 openssl pkcs8 -topk8 -inform PEM -nocrypt -in keypair.pem -out private.pem
 
 delete keypair.pem 
+
+using db mysql
+create database test_dansmultipro
+
+user: user@user.com
+pass: user
+
+link 
+- /api/auth/login
+- /api/recruitment/positions
+- /api/recruitment/positions/{id}
